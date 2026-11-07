@@ -16,7 +16,7 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const FAVORITES_KEY = 'mithai_ghar_favorites_v1';
+const FAVORITES_KEY = 'mithai_ghar_favorites_v2';
 const GIFT_BOX_KEY = 'mithai_ghar_gift_box_v1';
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
