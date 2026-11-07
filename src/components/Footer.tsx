@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
               A curated digital archive documenting the culinary science, time-honored techniques, and cultural heritage of authentic Indian sweets for Diwali.
             </p>
             <p className="text-[11px] text-[#f2a900]/80 font-mono">
-              Academic Project Submission · Confectionery Heritage
+              Confectionery Heritage
             </p>
           </div>
 
@@ -104,7 +104,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-[#f2a900]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#fff8ec]/60">
-          <p>© {new Date().getFullYear()} Mithai Ghar — A Diwali Sweets Recipe Collection. Built for College Project Submission.</p>
+          <p>© {new Date().getFullYear()} Mithai Ghar A Diwali Sweets Recipe Collection.</p>
           <div className="flex items-center gap-6">
             <Link to="/about" className="hover:text-[#fff8ec] transition-colors">About & Tech Stack</Link>
             <span aria-hidden="true">·</span>
