@@ -1,0 +1,6 @@
+{
+  "name": "Mithai Ghar",
+  "description": "A curated Diwali sweets recipe collection featuring 14 traditional recipes, interactive serving scalers, step-by-step timers, and a smart gift box shopping list planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
