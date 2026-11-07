@@ -16,16 +16,16 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const FAVORITES_KEY = 'mithai_ghar_favorites_v1';
+const FAVORITES_KEY = 'mithai_ghar_favorites_v2';
 const GIFT_BOX_KEY = 'mithai_ghar_gift_box_v1';
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [favorites, setFavorites] = useState<string[]>(() => {
     try {
       const saved = localStorage.getItem(FAVORITES_KEY);
-      return saved ? JSON.parse(saved) : ['besan-ladoo', 'kaju-katli', 'gulab-jamun'];
+      return saved ? JSON.parse(saved) : [];
     } catch {
-      return ['besan-ladoo', 'kaju-katli', 'gulab-jamun'];
+      return [];
     }
   });
 
