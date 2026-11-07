@@ -2,7 +2,11 @@ import { useEffect } from 'react';
 
 export function usePageMeta(title: string, description: string) {
   useEffect(() => {
-    document.title = `${title} | Mithai Ghar`;
+    if (title === 'Mithai Ghar' || title.startsWith('Mithai Ghar')) {
+      document.title = 'Mithai Ghar';
+    } else {
+      document.title = `${title} · Mithai Ghar`;
+    }
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -11,7 +15,7 @@ export function usePageMeta(title: string, description: string) {
 
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
-      ogTitle.setAttribute('content', `${title} | Mithai Ghar`);
+      ogTitle.setAttribute('content', title === 'Mithai Ghar' ? 'Mithai Ghar' : `${title} · Mithai Ghar`);
     }
 
     const ogDescription = document.querySelector('meta[property="og:description"]');
