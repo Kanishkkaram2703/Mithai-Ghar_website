@@ -15,8 +15,8 @@ import { usePageMeta } from '../hooks/usePageMeta';
 
 export const AboutPage: React.FC = () => {
   usePageMeta(
-    'About Mithai Ghar — Project Purpose, Tech Stack & Kitchen Safety',
-    'Learn about the Mithai Ghar college project submission, frontend architecture, and essential culinary safety guidelines for hot sugar syrup and ghee.'
+    'About Mithai Ghar Tech Stack & Kitchen Safety',
+    'Learn about the Mithai Ghar frontend architecture, and essential culinary safety guidelines for hot sugar syrup and ghee.'
   );
 
   return (
@@ -26,7 +26,7 @@ export const AboutPage: React.FC = () => {
         <div className="text-center space-y-3">
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#e8590c]">
             <GraduationCap size={15} />
-            <span>Academic Project Submission</span>
+            <span>A Sweet Website</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#5b1a1a] tracking-tight">
             About Mithai Ghar
@@ -40,7 +40,7 @@ export const AboutPage: React.FC = () => {
         <div className="bg-[#fffdfa] rounded-xl border border-[#5b1a1a]/15 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-center gap-2.5 text-sm font-semibold uppercase tracking-wider text-[#5b1a1a]">
             <BookOpen size={18} className="text-[#e8590c]" />
-            <span>Project Purpose & Background</span>
+            <span>Basic learn</span>
           </div>
           <h2 className="text-2xl font-serif font-bold text-[#231815]">
             Preserving Artisanal Diwali Confectionery
