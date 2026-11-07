@@ -12,7 +12,7 @@ export const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const prefersReducedMotion = useReducedMotion();
   usePageMeta(
-    'Mithai Ghar — Authentic Diwali Sweets Recipe Collection',
+    'Mithai Ghar',
     'Explore 14 traditional Diwali sweet recipes with step-by-step instructions, live ingredient scaling, step timers, and an interactive gift box shopping list planner.'
   );
 
